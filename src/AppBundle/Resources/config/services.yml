@@ -1,0 +1,7 @@
+imports:
+    - { resource: factories.yml }
+    - { resource: commands.yml }
+    - { resource: repositories.yml }
+    - { resource: cache.yml }
+
+services:

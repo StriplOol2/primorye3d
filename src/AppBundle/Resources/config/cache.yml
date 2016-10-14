@@ -1,0 +1,13 @@
+parameters:
+
+services:
+    app.memcache:
+        class: Memcache
+        calls:
+            - [ "connect", [ "memcache_host", "memcache_port"] ]
+
+    app.cache:
+        class: Doctrine\Common\Cache\MemcacheCache
+        calls:
+            - [ "setMemcache", [ "app.memcache" ] ]
+            - [ "setNamespace", [ 'primorye3d' ] ]
