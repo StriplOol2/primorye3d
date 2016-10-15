@@ -1,0 +1,14 @@
+{
+  "name": "panoram",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "~1.0.1",
+    "grunt-contrib-lib": "~0.3.0",
+    "grunt-contrib-concat": "~1.0.1",
+    "grunt-postcss": "~0.8.0",
+    "precss": "~1.4.0",
+    "autoprefixer": "~6.5.1",
+    "cssnext": "~1.8.4",
+    "cssnano": "~3.7.7"
+  }
+}
