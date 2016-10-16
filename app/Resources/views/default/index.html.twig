@@ -1,7 +1,43 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-<header>
-    <div class="menu"></div>
-</header>
+    <header>
+        <div class="menu">
+            <ul>
+                <li><a href="#costs">Стоимость</a></li>
+                <li><a href="#examples">Примеры</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="logo" class="pane">
+    </div>
+    <div id="examples" class="pane">
+    </div>
+    <div id="costs" class="pane">
+        <div class="container">
+            <ul>
+                <li>
+                    <div class="cost-container cost-first cost-red">
+                        7$
+                    </div>
+                </li>
+                <li>
+                    <div class="cost-container cost-blue">
+                        7$
+                    </div>
+                </li>
+                <li>
+                    <div class="cost-container cost-orange">
+                        7$
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer id="contacts">
+        <div class="container">
+            Приморье 3D - сертифицированные фотографы
+        </div>
+    </footer>
 {% endblock %}
