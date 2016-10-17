@@ -162,7 +162,7 @@ a.button_link {
 
 
 #examples {
-    background-color: #1D4E69;
+    background-color: #25678a;
     color: #fff;
     .example-info {
         display: inline-block;
@@ -204,6 +204,7 @@ a.button_link {
     ul {
         text-align: justify;
         li {
+            margin-bottom: 10px;
             margin-right: 20px;
             display: inline-block;
             &.helper {
@@ -258,6 +259,13 @@ a.button_link {
     #info {
         .info-block {
             width: auto;
+        }
+    }
+    #examples {
+        .example-info {
+            h2 {
+                font-size: 24px;
+            }
         }
     }
 }
