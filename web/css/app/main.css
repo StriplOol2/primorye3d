@@ -1,3 +1,9 @@
+@define-mixin max-screen $width {
+    @media screen and (max-width: $width) {
+        @mixin-content;
+    }
+}
+
 body {
     margin:0;
     height: 100%;
@@ -179,11 +185,13 @@ a.button_link {
         vertical-align: top;
         display: inline-block;
         width:31%;
-        li {
-            span {
-                color: #e5e9de;
+        ul {
+            li {
+                span {
+                    color: #e5e9de;
+                }
+                margin-bottom:10px;
             }
-            margin-bottom:10px;
         }
         h3 {
             font-weight: 300 !important;
@@ -234,6 +242,14 @@ a.button_link {
                     /*border-bottom: 1px solid rgba(255,255,255,0.8);*/
                 }
             }
+        }
+    }
+}
+
+@mixin max-screen 700px {
+    #info {
+        .info-block {
+            width: auto;
         }
     }
 }
