@@ -48,7 +48,16 @@ a.button_link {
          background-color: #e97e11;
     }
     &.red {
-
+         background-color: #cb3837;
+         &:hover {
+             background-color: #ac2e2d;
+         }
+    }
+    &.blue {
+         background-color: #2a79a7;
+         &:hover {
+             background-color: #226186;
+         }
     }
 }
 
@@ -100,9 +109,6 @@ a.button_link {
                  color: #cb3837;
              }
          }
-        .button_link {
-            background-color: #cb3837;
-        }
     }
 
     &.cost-blue {
@@ -112,10 +118,6 @@ a.button_link {
              color: #2a79a7;
          }
          }
-
-        .button_link {
-            background-color: #2a79a7;
-        }
     }
 
     &.cost-orange {
