@@ -171,6 +171,10 @@ a.button_link {
         h2 {
             font-weight:300;
             font-size:44px;
+
+            @mixin max-screen 700px {
+                font-size: 24px;
+            }
         }
         a.button_link {
             float: right;
@@ -196,6 +200,10 @@ a.button_link {
         h3 {
             font-weight: 300 !important;
         }
+
+        @mixin max-screen 700px {
+            width: auto;
+        }
     }
 }
 
@@ -216,6 +224,13 @@ a.button_link {
     }
     .container {
         width: 60%;
+        @mixin max-screen 1550px {
+            width: 80%;
+        }
+
+        @mixin max-screen 1024px {
+            width: 88%;
+        }
     }
 }
 
@@ -251,37 +266,6 @@ a.button_link {
                     /*border-bottom: 1px solid rgba(255,255,255,0.8);*/
                 }
             }
-        }
-    }
-}
-
-@mixin max-screen 700px {
-    #info {
-        .info-block {
-            width: auto;
-        }
-    }
-    #examples {
-        .example-info {
-            h2 {
-                font-size: 24px;
-            }
-        }
-    }
-}
-
-@mixin max-screen 1550px {
-    #costs {
-    .container {
-        width: 80%;
-    }
-}
-}
-
-@mixin max-screen 1024px {
-    #costs {
-        .container {
-            width: 88%;
         }
     }
 }
