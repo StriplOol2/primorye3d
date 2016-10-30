@@ -9,6 +9,7 @@
     "precss": "~1.4.0",
     "autoprefixer": "~6.5.1",
     "cssnext": "~1.8.4",
-    "cssnano": "~3.7.7"
+    "cssnano": "~3.7.7",
+    "jquery": "~3.1.1"
   }
 }

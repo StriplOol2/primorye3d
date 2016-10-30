@@ -8,6 +8,7 @@ module.exports = function(grunt) {
             // 2. Настройки для склеивания файлов
             js: {
                 src: [
+                    'node_modules/jquery/dist/jquery.min.js',
                     'web/js/app/*.js' // Все js-файлы в директории libs,
                 ],
                 dest: 'web/js/dest/main.js'

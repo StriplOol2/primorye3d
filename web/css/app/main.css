@@ -175,10 +175,13 @@ a.button_link {
 
 #examples {
     background-color: #25678a;
+    background-image: url("../../i/back.svg");
+    background-size: 100% 100%;
+
     color: #fff;
     .example-info {
         display: inline-block;
-        width: 64%;
+        width: 46%;
         vertical-align: top;
         h2 {
             font-weight:300;
@@ -267,7 +270,7 @@ a.button_link {
             color: #1a1a1a;
             margin: 0 auto;
             display: block;
-            max-width:600px;
+            max-width:620px;
         }
 
         .title-sub {
@@ -334,4 +337,49 @@ a.button_link {
 .link {
     color: #0b97c4;
     text-decoration: none;
+}
+
+.order {
+    display: none;
+    border-radius: 7px;
+    position: fixed;
+    width: 330px;
+    height: 340px;
+    margin-top: -170px;
+    margin-left: -165px;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+}
+
+.disable-screen {
+    display: none;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+
+.order__form-item-label {
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.order__form-item-element {
+    display: block;
+    margin: 0 auto;
+}
+
+.order__form-btn {
+
+}
+
+.order {
+    padding: 17px;
 }
