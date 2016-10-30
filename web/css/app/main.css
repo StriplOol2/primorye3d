@@ -343,10 +343,11 @@ a.button_link {
     display: none;
     border-radius: 7px;
     position: fixed;
-    width: 330px;
-    height: 340px;
-    margin-top: -170px;
-    margin-left: -165px;
+    width: 320px;
+    height: 210px;
+    margin-top: -160px;
+    margin-left: -178px;
+    padding: 17px;
     top: 50%;
     left: 50%;
     background-color: white;
@@ -357,7 +358,7 @@ a.button_link {
     background-color: black;
     width: 100%;
     height: 100%;
-    opacity: 0.5;
+    opacity: 0.8;
     position: fixed;
     padding: 0;
     margin: 0;
@@ -369,17 +370,44 @@ a.button_link {
     width: 50px;
     display: block;
     margin: 0 auto;
+    font-style: 15px;
 }
 
 .order__form-item-element {
+    width: 96%;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 11px;
+    height: 24px;
+    padding-left: 10px;
+    font-size: 16px;
 }
 
-.order__form-btn {
-
+.order .order__form-btn {
+    margin: 10px auto;
+    display: block;
+    width: 200px;
 }
 
-.order {
-    padding: 17px;
+.order__title {
+    color: #226186;
+    font-weight: 300;
+    margin: 5px 0 15px 0;
+    width: 100px;
 }
+
+/* слегка доработанный, универсальный clearfix хак */
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix { display: inline-block; }
+
+* html .clearfix { height: 1%; }
+
+.clearfix { display: block; }

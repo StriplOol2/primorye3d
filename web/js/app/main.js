@@ -14,11 +14,31 @@
             $('.order-btn').on("click", function (event) {
                 event.preventDefault();
                 $('.disable-screen').show();
+                $('.order__form-item-element').val('');
                 $('.order').show();
             });
             $('.disable-screen').on("click", function () {
                 $('.disable-screen').hide();
                 $('.order').hide();
+            });
+
+            $('.order__form-btn').on("click", function () {
+                event.preventDefault();
+                var name  = $('.order #name').val();
+                var phone = $('.order #phone').val();
+                var data = {
+                    name: name,
+                    phone: phone
+                };
+                $.ajax({
+                    type: "POST",
+                    url: '/api/order',
+                    data: data,
+                    success: function () {
+                        $('.disable-screen').hide();
+                        $('.order').hide();
+                    }
+                });
             });
         }
     };
