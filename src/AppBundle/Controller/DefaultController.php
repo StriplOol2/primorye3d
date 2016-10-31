@@ -31,6 +31,10 @@ class DefaultController extends Controller
         $name = $request->request->get("name");
         $phone = $request->request->get("phone");
 
+        if (empty($phone)) {
+            return new JsonResponse([], 403);
+        }
+
         $headers = 'From: primorye3d@gmail.com' . "\r\n" .
         'Reply-To: primorye3d@gmail.com' . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
