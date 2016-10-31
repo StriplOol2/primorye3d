@@ -18,7 +18,7 @@
         init: function (options) {
             var self = this;
             $(document).keyup(function(e) {
-                if (e.keyCode === 27 && $(self.disableScreenSelector).is(':visible')) {
+                if (e.keyCode == 27 && $(self.disableScreenSelector).is(':visible')) {
                     self.hideOrder();
                 }  // esc
             });
