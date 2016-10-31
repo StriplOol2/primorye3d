@@ -27,6 +27,7 @@ class DefaultController extends Controller
      */
     public function orderAction(Request $request)
     {
+        sleep(1);
         $name = $request->request->get("name");
         $phone = $request->request->get("phone");
 

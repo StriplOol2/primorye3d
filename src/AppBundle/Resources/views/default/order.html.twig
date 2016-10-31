@@ -1,14 +1,21 @@
 <div class="disable-screen"></div>
 <div class="order">
-    <h2 class="order__title">Заказ</h2>
+    <div class="order__header">
+        <h2 class="order__title">Заказ</h2>
+        <div class="order__close">x</div>
+    </div>
     <form class="order__form" action="#">
+        <div class="order__form-error">
+        </div>
         <label class="order__form-item" for="name">Имя</label>
-        <input class="order__form-item-element" type="text" name="name" id="name">
+        <input class="order__form-item-element" type="text" name="name" id="name" required>
         <label class="order__form-item" for="phone">Телефон</label>
-        <input class="order__form-item-element" type="text" name="phone" id="phone">
+        <input class="order__form-item-element" type="text" name="phone" id="phone" required>
         <a class="button_link blue order__form-btn" href="#">Отправить</a>
     </form>
     <div class="order__loader">
-        <img src="{{ asset('i/ajax-loader.gif') }}" alt="order-loader">
+        <img class="order__loader-image" src="{{ asset('i/ajax-loader.gif') }}" alt="order-loader">
+        <div class="order__loader-title">Давайте жить, пока мы живы.<br />
+            © Иоганн Вольфганг Гете</div>
     </div>
 </div>

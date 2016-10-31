@@ -1,4 +1,4 @@
-( function ( $ ){
+( function ( $, document ){
 
     var MainPage = {
 
@@ -6,14 +6,22 @@
         loaderSelector:         '.order__loader',
         disableScreenSelector:  '.disable-screen',
         orderFormItemElement:   '.order__form-item-element',
-        orderFormButton:        '.order__form-btn',
+        orderFormButtonSelector:'.order__form-btn',
         orderButton:            '.order-btn',
+        orderFormError:         '.order__form-error',
+        orderCloseSelector:     '.order__close',
 
         /**
          *
          * @returns {*}
          */
         init: function (options) {
+            var self = this;
+            $(document).keyup(function(e) {
+                if (e.keyCode === 27 && $(self.disableScreenSelector).is(':visible')) {
+                    self.hideOrder();
+                }  // esc
+            });
             this.bindings();
         },
 
@@ -24,17 +32,19 @@
                 event.preventDefault();
                 $(self.disableScreenSelector).show();
                 $(self.orderFormItemElement).val('');
-                $(self.order).show();
+                $(self.order).fadeIn();
             });
 
             // de active disable screen
             $(this.disableScreenSelector).on("click", function () {
-                $(self.disableScreenSelector).hide();
-                $(self.order).hide();
+                self.hideOrder();
             });
 
             // ORDER
-            $(this.orderFormButton).on("click", function () {
+            $(this.orderCloseSelector).on("click", function () {
+                self.hideOrder();
+            });
+            $(this.orderFormButtonSelector).on("click", function (event) {
                 event.preventDefault();
                 var name  = $('.order #name').val();
                 var phone = $('.order #phone').val();
@@ -42,18 +52,27 @@
                     name: name,
                     phone: phone
                 };
-                $(this.loaderSelector).show();
+                $(self.loaderSelector).show();
                 $.post('/api/order', data, function () {
-                        $(self.disableScreenSelector).hide();
-                        $(self.order).hide();
+                        self.hideOrder();
                     })
                     .fail(function () {
+                        $(self.orderFormError).show();
+                        $(self.loaderSelector).fadeOut();
 
                     })
                     .always(function () {
-                        $(self.loaderSelector).hide();
+
                     });
             });
+        },
+
+        hideOrder: function () {
+            var self = this;
+            $(self.order).fadeOut('fast', (function () {
+                $(self.loaderSelector).hide();
+            }));
+            $(self.disableScreenSelector).fadeOut();
         }
     };
 
@@ -83,4 +102,4 @@
         // }
     }
 
-})(jQuery, window);
+})(jQuery, document);

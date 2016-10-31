@@ -370,7 +370,7 @@ a.button_link {
     width: 50px;
     display: block;
     margin: 0 auto;
-    font-style: 15px;
+    font-size: 15px;
 }
 
 .order__form-item-element {
@@ -380,6 +380,7 @@ a.button_link {
     height: 24px;
     padding-left: 10px;
     font-size: 16px;
+    border: 1px solid #2a79a7;
 }
 
 .order .order__form-btn {
@@ -389,16 +390,59 @@ a.button_link {
 }
 
 .order__title {
+    float: left;
     color: #226186;
     font-weight: 300;
     margin: 5px 0 15px 0;
     width: 100px;
 }
 
+.order__header {
+    display: inline-block;
+    width:100%;
+}
+
 .order__loader {
+    display: none;
+    position: absolute;
+    width: 95%;
+    border-radius: 10px;
+    background-color: #fff;
+    height: 100%;
+    top: 0;
+}
+
+.order__loader-image {
+    left: 38%;
+    top: 30%;
+    position: absolute;
+}
+
+.order__loader-title {
+    left: 24%;
+    top: 66%;
+    position: absolute;
+    font-size: 11px;
+}
+
+.order__form-error {
     display: none;
 }
 
+.order__close {
+    width: 20px;
+    color: white;
+    background-color: #2a79a7;
+    border-radius: 19px;
+    height: 19px;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+    line-height: 16px;
+    &:hover {
+        background-color: #226186;
+    }
+}
 /* слегка доработанный, универсальный clearfix хак */
 
 .clearfix:after {
@@ -409,9 +453,3 @@ a.button_link {
     clear: both;
     height: 0;
 }
-
-.clearfix { display: inline-block; }
-
-* html .clearfix { height: 1%; }
-
-.clearfix { display: block; }
