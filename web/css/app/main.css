@@ -85,6 +85,9 @@ a.button_link {
     border-left: 1px solid #ccc;
     border-top: 10px solid #ccc;
     border-radius: 10px;
+    @mixin max-screen 380px {
+        height: 320px;
+    }
 
     .description {
         margin:15px;
