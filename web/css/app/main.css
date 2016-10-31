@@ -395,6 +395,10 @@ a.button_link {
     width: 100px;
 }
 
+.order__loader {
+    display: none;
+}
+
 /* слегка доработанный, универсальный clearfix хак */
 
 .clearfix:after {
