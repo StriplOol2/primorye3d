@@ -2,6 +2,13 @@
 
     var MainPage = {
 
+        order:                  '.order',
+        loaderSelector:         '.order__loader',
+        disableScreenSelector:  '.disable-screen',
+        orderFormItemElement:   '.order__form-item-element',
+        orderFormButton:        '.order__form-btn',
+        orderButton:            '.order-btn',
+
         /**
          *
          * @returns {*}
@@ -11,18 +18,23 @@
         },
 
         bindings: function () {
-            $('.order-btn').on("click", function (event) {
+            var self = this;
+            // order button
+            $(this.orderButton).on("click", function (event) {
                 event.preventDefault();
-                $('.disable-screen').show();
-                $('.order__form-item-element').val('');
-                $('.order').show();
-            });
-            $('.disable-screen').on("click", function () {
-                $('.disable-screen').hide();
-                $('.order').hide();
+                $(self.disableScreenSelector).show();
+                $(self.orderFormItemElement).val('');
+                $(self.order).show();
             });
 
-            $('.order__form-btn').on("click", function () {
+            // de active disable screen
+            $(this.disableScreenSelector).on("click", function () {
+                $(self.disableScreenSelector).hide();
+                $(self.order).hide();
+            });
+
+            // ORDER
+            $(this.orderFormButton).on("click", function () {
                 event.preventDefault();
                 var name  = $('.order #name').val();
                 var phone = $('.order #phone').val();
@@ -30,15 +42,17 @@
                     name: name,
                     phone: phone
                 };
-                $.ajax({
-                    type: "POST",
-                    url: '/api/order',
-                    data: data,
-                    success: function () {
-                        $('.disable-screen').hide();
-                        $('.order').hide();
-                    }
-                });
+                $(this.loaderSelector).show();
+                $.post('/api/order', data, function () {
+                        $(self.disableScreenSelector).hide();
+                        $(self.order).hide();
+                    })
+                    .fail(function () {
+
+                    })
+                    .always(function () {
+                        $(self.loaderSelector).hide();
+                    });
             });
         }
     };
