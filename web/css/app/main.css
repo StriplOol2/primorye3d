@@ -236,10 +236,15 @@ a.button_link {
     ul {
         padding-left: 20px;
         text-align: justify;
+
+        @mixin max-screen 1260px {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
         li {
             text-align: left;
             margin-bottom: 10px;
-            margin-right: 20px;
             display: inline-block;
             &.helper {
                 width: 100%;

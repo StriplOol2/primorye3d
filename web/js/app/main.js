@@ -5,7 +5,7 @@
         order:                  '.order',
         loaderSelector:         '.order__loader',
         disableScreenSelector:  '.disable-screen',
-        orderFormItemElement:   '.order__form-item-element',
+        orderFormItemElementSelector:   '.order__form-item-element',
         orderFormButtonSelector:'.order__form-btn',
         orderButton:            '.order-btn',
         orderFormError:         '.order__form-error',
@@ -39,9 +39,11 @@
             var self = this;
             // order button
             $(this.orderButton).on("click", function (event) {
+                var orderDescription = $.trim($(this).prev().find('.main').html());
                 event.preventDefault();
                 $(self.disableScreenSelector).show();
-                $(self.orderFormItemElement).val('');
+                $(self.orderFormItemElementSelector).val('');
+                $('.order #description').val(orderDescription);
                 $(self.order).fadeIn();
             });
 
