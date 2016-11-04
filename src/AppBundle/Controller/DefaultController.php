@@ -30,6 +30,7 @@ class DefaultController extends Controller
         sleep(1);
         $name = $request->request->get("name");
         $phone = $request->request->get("phone");
+        $description = $request->request->get("description");
 
         if (empty($phone)) {
             return new JsonResponse([], 403);
@@ -45,7 +46,8 @@ class DefaultController extends Controller
                     '@App/message/order.html.twig',
                     [
                         'name' => $name,
-                        'phone' => $phone
+                        'phone' => $phone,
+                        'description' => $description
                     ]
                 ),
             $headers

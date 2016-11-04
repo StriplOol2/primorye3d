@@ -7,11 +7,13 @@
     <form class="order__form" action="#">
         <div class="order__form-error">
         </div>
-        <label class="order__form-item" for="name">Имя</label>
+        <label class="order__form-item" for="name">Ваше имя</label>
         <input class="order__form-item-element" type="text" name="name" id="name" required>
-        <label class="order__form-item" for="phone">Телефон</label>
+        <label class="order__form-item" for="phone">Ваш телефон</label>
         <input class="order__form-item-element" type="text" name="phone" id="phone" required>
-        <a class="button_link blue order__form-btn" href="#">Отправить</a>
+        <label class="order__form-item" for="description">Описание заказа</label>
+        <textarea class="order__form-item-element order__form-item-element-description" name="description" id="description"></textarea>
+        <a class="button_link blue order__form-btn" href="#">Заказать</a>
     </form>
     <div class="order__loader">
         <img class="order__loader-image" src="{{ asset('i/ajax-loader.gif') }}" alt="order-loader">

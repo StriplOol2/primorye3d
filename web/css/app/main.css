@@ -347,7 +347,7 @@ a.button_link {
     border-radius: 7px;
     position: fixed;
     width: 320px;
-    height: 210px;
+    height: 306px;
     margin-top: -160px;
     margin-left: -178px;
     padding: 17px;
@@ -446,6 +446,12 @@ a.button_link {
         background-color: #226186;
     }
 }
+
+.order__form-item-element-description {
+    height: 60px;
+    resize: none;
+}
+
 /* слегка доработанный, универсальный clearfix хак */
 
 .clearfix:after {

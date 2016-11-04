@@ -56,11 +56,13 @@
             });
             $(this.orderFormButtonSelector).on("click", function (event) {
                 event.preventDefault();
-                var name  = $('.order #name').val();
-                var phone = $('.order #phone').val();
+                var name        = $('.order #name').val();
+                var phone       = $('.order #phone').val();
+                var description = $('.order #description').val();
                 var data = {
                     name: name,
-                    phone: phone
+                    phone: phone,
+                    description: description
                 };
                 $(self.loaderSelector).show();
                 $.post('/api/order', data, function () {
