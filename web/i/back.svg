@@ -50,8 +50,57 @@
 	.st44{fill:#1D4E69;}
 	.st45{fill:none;stroke:#7293E8;stroke-miterlimit:10;}
 	.st46{fill:none;stroke:#7293E8;stroke-miterlimit:10;stroke-dasharray:12.1105,12.1105;}
+	.rt0{fill:#25678A;stroke:#25678A;stroke-width:0.25;stroke-miterlimit:10;}
+	.rt1{fill:none;stroke:#215870;stroke-width:8;stroke-miterlimit:10;}
+	.rt2{display:none;}
+	.rt3{display:inline;fill:#336699;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
+	.rt4{fill:#CCCC00;}
+	.rt5{fill:#999900;}
+	.rt6{fill:#FFFF66;}
+	.rt7{fill:#64350D;}
+	.rt8{fill:#CCCC00;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+	.rt9{fill:#330000;}
+	.rt10{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
+	.rt11{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+	.rt12{fill:none;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
+	.rt13{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.rt14{fill:#0099CC;}
+	.rt15{fill:#006699;}
+	.rt16{fill:#3399CC;}
+	.rt17{fill:#99CCCC;}
+	.rt18{fill:#3399CC;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+	.rt19{fill:#059939;}
+	.rt20{fill:#336600;}
+	.rt21{fill:#66CC66;}
+	.rt22{fill:#059939;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+	.rt23{fill:#317A01;}
+	.rt24{fill:#267726;}
+	.rt25{fill:#3B8C06;}
+	.rt26{fill:#5FCE17;}
+	.rt27{fill:#B57E48;}
+	.rt28{fill:#E8B274;}
+	.rt29{fill:#FFCD05;}
+	.rt30{fill:#8CA6F9;}
+	.rt31{fill:#FFD85A;}
+	.rt32{fill:#FCFCFC;}
+	.rt33{fill:#3693D8;}
+	.rt34{opacity:0.4;fill:#444444;}
+	.rt35{opacity:0.5;fill:#444444;}
+	.rt36{fill:#FFFFFF;}
+	.rt37{fill:#595858;}
+	.rt38{fill:#494949;}
+	.rt39{fill:#353535;}
+	.rt40{fill:none;stroke:#606060;stroke-miterlimit:10;}
+	.rt41{fill:#D3D3D3;}
+	.rt42{fill:#262626;}
+	.rt43{fill:#383838;}
+	.rt44{fill:none;stroke:#383838;stroke-width:2;stroke-miterlimit:10;}
+	.rt45{opacity:0.64;fill:#707070;}
+	.rt46{fill:#66410C;}
+	.rt47{fill:#1D4E69;}
+	.rt48{fill:none;stroke:#7293E8;stroke-miterlimit:10;}
+	.rt49{fill:none;stroke:#7293E8;stroke-miterlimit:10;stroke-dasharray:12.1105,12.1105;}
 </style>
-<rect y="0" class="st0" width="100%" height="100%"/>
 <svg viewBox="0 -260 250 671">
 <!--<svg viewBox="0 0 250 371">-->
 	<g id="МОст_2_">
@@ -212,6 +261,79 @@
 	</g>
 </svg>
 <rect y="88%" class="st44" width="100%" height="79.2"/>
+<svg viewBox="-400 -320 250 671">
+	<g id="фотограф">
+	<polygon class="rt27" points="357.7,67.9 349.3,58.3 335.8,70.1 343,76.3 	"/>
+	<polygon class="rt28" points="341.7,100 319.2,119.9 259.2,127.5 258.5,116 313.4,103.4 329.1,88.6 	"/>
+	<path class="rt29" d="M346.1,72.4l-8.8,6.2l-19.3,21.1c6.4,6.4,12.8,12.8,19.2,19.2l9.3-8.8l48,70.9l34.7-23.8l-46.4-77
+		C375.2,67.4,358.3,63.8,346.1,72.4z"/>
+	<polygon class="rt30" points="429.3,157.2 426,297.3 408,297.3 394.7,181 	"/>
+	<path class="rt31" d="M408,297.3v9.3l-30.2,6.5c-2.4,0.5-4.1,2.6-4.1,5.1v1.8h51.6l0.7-22.7H408z"/>
+	<rect x="373.7" y="320" class="rt32" width="51.6" height="2"/>
+	<g>
+		<g>
+			<path class="rt33" d="M397.4,188.7c4.7-2.1,8.7-5.3,11.8-9.4c0.5-0.6-0.6-1.2-1-0.6c-3,4-6.8,7-11.4,9
+				C396.1,188,396.7,189.1,397.4,188.7L397.4,188.7z"/>
+		</g>
+	</g>
+	<path class="rt34" d="M397.5,206l30.2,17.3l-2.4,96.6h-51.6v-1.6c0-2.6,1.8-4.8,4.3-5.3l30-6.4v-9.3L397.5,206z"/>
+	<polyline class="rt35" points="346.7,110.1 356,103.3 378.6,157.2 	"/>
+	<g>
+		<g>
+			<path class="rt36" d="M390.7,311.1c0.7,0.2,1.2,0.9,1.2,1.6c0,0.8,1.2,0.8,1.2,0c0-1.3-0.9-2.5-2.1-2.8
+				C390.3,309.7,390,310.9,390.7,311.1L390.7,311.1z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path class="rt36" d="M394.5,310c0.7,0.2,1.2,0.9,1.2,1.6c0,0.8,1.2,0.8,1.2,0c0-1.3-0.9-2.5-2.1-2.8
+				C394.1,308.6,393.8,309.8,394.5,310L394.5,310z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path class="rt36" d="M398.2,308.9c0.7,0.2,1.2,0.9,1.2,1.6c0,0.8,1.2,0.8,1.2,0c0-1.3-0.9-2.5-2.1-2.8
+				C397.8,307.5,397.4,308.7,398.2,308.9L398.2,308.9z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path class="rt36" d="M401.2,308.1c0.7,0.2,1.2,0.9,1.2,1.6c0,0.8,1.2,0.8,1.2,0c0-1.3-0.9-2.5-2.1-2.8
+				C400.8,306.8,400.4,307.9,401.2,308.1L401.2,308.1z"/>
+		</g>
+	</g>
+	<g id="фотик">
+		<g>
+			<rect x="200.3" y="112.3" class="rt37" width="9.9" height="23.8"/>
+			<rect x="210.2" y="113.4" class="rt38" width="10.7" height="21.8"/>
+			<rect x="221" y="113.4" class="rt39" width="5.2" height="21.8"/>
+			<line class="rt40" x1="210.2" y1="117.4" x2="221" y2="117.4"/>
+			<line class="rt40" x1="210.2" y1="126.8" x2="221" y2="126.8"/>
+			<line class="rt40" x1="210.2" y1="131.4" x2="221" y2="131.4"/>
+			<line class="rt40" x1="210.2" y1="122.3" x2="221" y2="122.3"/>
+			<path class="rt41" d="M235.3,142.2h-6.1c-1.7,0-3.1-1.4-3.1-3.1v-29.6c0-1.7,1.4-3.1,3.1-3.1h6.1c1.7,0,3.1,1.4,3.1,3.1V139
+				C238.5,140.8,237.1,142.2,235.3,142.2z"/>
+			<rect x="198.6" y="112.3" class="rt42" width="1.7" height="23.8"/>
+			<rect x="226.1" y="108.9" class="rt37" width="12.3" height="30.2"/>
+			<rect x="224.5" y="142.2" class="rt43" width="16" height="10.2"/>
+			<line class="rt44" x1="225.7" y1="149.4" x2="188" y2="322"/>
+			<line class="rt44" x1="232.5" y1="151.4" x2="232.5" y2="326.3"/>
+			<line class="rt44" x1="239.3" y1="150" x2="280" y2="322"/>
+		</g>
+	</g>
+	<path class="rt28" d="M260,115.9h-21.5c-0.8,0-1.6,0.4-2,1.1l-0.1,0.1c-0.4,0.6,0.1,1.4,0.8,1.4h5.6c0,0,1.4,0,1,1.2
+		c-0.3,1-9.4,1.1-12,1.2c-0.5,0-0.9,0.2-1.3,0.4c-0.6,0.4-1.3,1.1-0.9,1.5c0.7,0.7,12.1,0.5,12.1,0.5l-12.9,1.6l-0.7,1.2l0.4,0.6
+		c0.2,0.4,0.6,0.6,1.1,0.6l12-0.4l-10.7,1.4c-0.5,0.1-1,0.4-1.3,0.8l0,0.9l0.3,0.5l12-0.6l-10.3,2.4l-0.2,1.1l0.7,0.4
+		c0,0,16.7-2.7,16.7-2.7l11.8-3.8L260,115.9z"/>
+	<path class="rt28" d="M322.7,29.1l11.1-4.1c9.9-3.7,21,0.7,25.8,10.2l0,0c4.4,8.8,2.1,19.5-5.6,25.7l-3,2.4l-6.2,6l-6.1,6
+		c-0.8,2.1-1.7,1.8-3.9,2.2l-2.2,0.3c-2.9,0.6-5.3,0.5-6-2.3l-8.6-25.4l-1.8-8.7C316.1,35.7,317.5,31,322.7,29.1z"/>
+	<polygon class="rt45" points="316.2,46.1 323.5,67.3 340.1,74.2 362.3,56 359.5,25.8 	"/>
+	<polygon class="rt46" points="317.9,47.6 320.1,50.3 324.7,42.5 341.3,46.4 341.3,41.1 345.3,54 347.8,44.5 354.5,43.8 353.1,49.6
+		355.3,63.2 362.3,67.9 362.3,51.9 366.7,46.9 362.3,37.7 367.6,37.7 366.7,32.2 359,27.9 336.7,21 320.1,28.5 312.6,42.8 	"/>
+	<path class="rt29" d="M300.6,46.1c2.1-1.5,8-3.2,15.4-4.7c16.1-3.3,39.1-6.2,45.2-7c0.8-0.1,1.4-0.9,1.3-1.7v0
+		c-2.2-15.3-16.5-25.8-31.7-23.5l-2.8,0.4c-6.7,1-12.3,5.6-14.6,12l-2.3,6.3c-0.1,0.3-1.3,7.5-1.5,7.6l-24.9,13.2"/>
+</g>
+</svg>
 <g style="width: 100%">
 	<g>
 		<line xmlns="http://www.w3.org/2000/svg" opacity=".3" stroke="#fff" y1="92%" x2="100%" y2="92%" stroke-dasharray="20.4571,13.6381"/>

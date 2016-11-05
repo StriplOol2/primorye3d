@@ -5,13 +5,13 @@
         <nav class="menu">
             <ul>
                 <li><a class="menu__anchor-link" href="#costs">Стоимость</a></li>
-                {#<li><a class="menu__anchor-link" href="#examples">Примеры</a></li>#}
+                <li><a class="menu__anchor-link" href="#examples">Примеры</a></li>
                 <li><a class="menu__anchor-link" href="#contacts">Контакты</a></li>
             </ul>
         </nav>
     </header>
     <main role="main">
-        <section id="examples" class="pane">
+        <section id="main" class="pane">
             <div class="container">
                 {#<div style="min-width:260px; width: 30%; height: 350px; background-color: #1a1a1a;display: inline-block;margin-right: 20px"></div>#}
                 <div class="example-info">
@@ -20,6 +20,27 @@
                     <br />
                     <br />
                     <a class="button_link order-btn" href="#">Заказать</a>
+                </div>
+            </div>
+        </section>
+        <section id="examples">
+            <div class="container">
+                <div class="carousel" style="min-width: 320px;">
+                    <div class="carousel__left-btn"></div>
+                    <div class="carousel__wrapper">
+                        <ul>
+                            <li>
+                                <div class="carousel__element">
+                                    <div class="carousel__element-image">
+                                    </div>
+                                    <div class="carousel__element-description">
+                                        Японский гараж
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="carousel__right-btn"></div>
                 </div>
             </div>
         </section>

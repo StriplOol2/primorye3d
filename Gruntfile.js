@@ -9,6 +9,7 @@ module.exports = function(grunt) {
             js: {
                 src: [
                     'node_modules/jquery/dist/jquery.min.js',
+                    'node_modules/swiper/dist/js/swiper.min.js',
                     'web/js/app/*.js' // Все js-файлы в директории libs,
                 ],
                 dest: 'web/js/dest/main.js'
@@ -16,6 +17,7 @@ module.exports = function(grunt) {
             // 2. Настройки для склеивания файлов
             css: {
                 src: [
+                    'node_modules/swiper/dist/css/swiper.min.css',
                     'web/css/app/*.css' // Все js-файлы в директории libs,
                 ],
                 dest: 'web/css/dest/main.css'
