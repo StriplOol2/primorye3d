@@ -5,7 +5,7 @@
         <nav class="menu">
             <ul>
                 <li><a class="menu__anchor-link" href="#costs">Стоимость</a></li>
-                <li><a class="menu__anchor-link" href="#examples">Примеры</a></li>
+                {#<li><a class="menu__anchor-link" href="#examples">Примеры</a></li>#}
                 <li><a class="menu__anchor-link" href="#contacts">Контакты</a></li>
             </ul>
         </nav>
@@ -23,27 +23,27 @@
                 </div>
             </div>
         </section>
-        <section id="examples">
-            <div class="container">
-                <div class="carousel" style="min-width: 320px;">
-                    <div class="carousel__left-btn"></div>
-                    <div class="carousel__wrapper">
-                        <ul>
-                            <li>
-                                <div class="carousel__element">
-                                    <div class="carousel__element-image">
-                                    </div>
-                                    <div class="carousel__element-description">
-                                        Японский гараж
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="carousel__right-btn"></div>
-                </div>
-            </div>
-        </section>
+        {#<section id="examples">#}
+            {#<div class="container">#}
+                {#<div class="carousel" style="min-width: 320px;">#}
+                    {#<div class="carousel__left-btn"></div>#}
+                    {#<div class="carousel__wrapper">#}
+                        {#<ul>#}
+                            {#<li>#}
+                                {#<div class="carousel__element">#}
+                                    {#<div class="carousel__element-image">#}
+                                    {#</div>#}
+                                    {#<div class="carousel__element-description">#}
+                                        {#Японский гараж#}
+                                    {#</div>#}
+                                {#</div>#}
+                            {#</li>#}
+                        {#</ul>#}
+                    {#</div>#}
+                    {#<div class="carousel__right-btn"></div>#}
+                {#</div>#}
+            {#</div>#}
+        {#</section>#}
         <section id="info" class="pane">
             <div class="container">
                 <div class="info-block">
@@ -214,4 +214,5 @@
             $('main').initMainPage();
         });
     </script>
+    {{ parent() }}
 {% endblock %}
