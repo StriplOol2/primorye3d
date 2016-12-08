@@ -177,6 +177,25 @@ a.button_link {
 
 #examples {
     background-color: #1A8BCB;
+
+    ul {
+        padding-left: 20px;
+
+        @mixin max-screen 1260px {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        li {
+            text-align: left;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+    }
+
+    img {
+        border-radius: 5px;
+    }
 }
 
 #main {
