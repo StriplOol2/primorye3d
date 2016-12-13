@@ -176,9 +176,42 @@ a.button_link {
 }
 
 #examples {
-    background-color: #25678a;
+    background-color: #1A8BCB;
+    .title {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        max-width: 700px;
 
+        .title-main {
+            position: relative;
+            font-size:36px;
+            font-weight: 300;
+            color: #e5e9de;
+            margin: 0 auto;
+            display: block;
+            max-width: 246px;
+        }
+
+        .title-sub {
+            position: relative;
+            color: #6d7986;
+            font-size:18px;
+            font-weight: 300;
+            margin: 0 auto;
+            display: block;
+            max-width: 674px;
+        }
+    }
+
+    .title-wrapper {
+        width: 100%;
+        position: relative;
+        margin-bottom: 40px;
+    }
     ul {
+        width:100%;
+        text-align:center;
         padding-left: 20px;
 
         @mixin max-screen 1260px {
@@ -187,7 +220,7 @@ a.button_link {
         }
 
         li {
-            text-align: left;
+            padding: 0 20px 0 0;
             margin-bottom: 10px;
             display: inline-block;
         }
@@ -230,7 +263,7 @@ a.button_link {
 
 #info {
     color: #fff;
-    background-color: #1A8BCB;
+    background-color: #25678a;
 
     .title {
         position: relative;
@@ -238,25 +271,25 @@ a.button_link {
         margin: 0 auto;
         max-width: 700px;
 
-    .title-main {
-        position: relative;
-        font-size:36px;
-        font-weight: 300;
-        color: #1d4569;
-        margin: 0 auto;
-        display: block;
-        max-width:544px;
-    }
+        .title-main {
+            position: relative;
+            font-size:36px;
+            font-weight: 300;
+            color: #e5e9de;
+            margin: 0 auto;
+            display: block;
+            max-width:544px;
+        }
 
-    .title-sub {
-        position: relative;
-        color: #6d7986;
-        font-size:18px;
-        font-weight: 300;
-        margin: 0 auto;
-        display: block;
-        max-width: 674px;
-    }
+        .title-sub {
+            position: relative;
+            color: #6d7986;
+            font-size:18px;
+            font-weight: 300;
+            margin: 0 auto;
+            display: block;
+            max-width: 674px;
+        }
     }
 
     .title-wrapper {
@@ -287,7 +320,7 @@ a.button_link {
 
     .info-block-2 {
         padding: 20px;
-        color: #333333;
+        color: #e5e9de;
         vertical-align: top;
         display: inline-block;
         width:60%;

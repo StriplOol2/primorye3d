@@ -4,6 +4,7 @@
     <header>
         <nav class="menu">
             <ul>
+                <li><a class="order-btn" href="#">Заказать</a></li>
                 <li><a class="menu__anchor-link" href="#costs">Стоимость</a></li>
                 <li><a class="menu__anchor-link" href="#examples">Примеры</a></li>
                 <li><a class="menu__anchor-link" href="#info">Что это?</a></li>
@@ -20,31 +21,20 @@
                     Виртуальные экскурсии по помещениям компании прямо в браузере или смартфоне.
                     <br />
                     <br />
-                    <a class="button_link order-btn" href="#">Заказать</a>
-                </div>
-            </div>
-        </section>
-        <section id="info" class="pane">
-            <div class="container">
-                <div class="title-wrapper">
-                    <div class="title">
-                        <span class="title-main">Что такое виртуальный тур?</span>
-                    </div>
-                </div>
-                <div class="info-block">
-                    <img style="
-                            border-radius: 20px;"
-                            src="{{ asset('i/plan.jpg') }}" />
-                </div>
-                <div class="info-block-2">
-                    Виртуальный тур - это круговые 360° интерактивные панорамы помещений с возможностью перехода между ними. Это потрясающие виртуальные экскурсии по помещениям компании прямо в браузере или смартфоне. <br /> <br />
-                    3D-тур начинается за несколько метров до входа в заведение с улицы, либо в дверном проёме, если у компании нет отдельного входа. Вы сможете заранее спланировать маршрут перемещений, выгодно выделяя особенности помещения и не привлекая внимания к служебным и рабочим зонам. <br /> <br />
-                    Важная особенность 3Д-туров - возможность объединять в одном туре несколько этажей здания с логичной интуитивной навигацией между ними, как по лестницам и лифтам, так и кнопками выбора этажа. <br />
+                    <br />
+                    <br />
+                    <br />
                 </div>
             </div>
         </section>
         <section id="examples">
             <div class="container">
+                <div class="title-wrapper">
+                    <div class="title">
+                        <span class="title-main">Наши работы</span>
+                        <span class="title-sub">профессиональный подход на всех этапах работы, гарантия высокого качества.</span>
+                    </div>
+                </div>
                 <div class="carousel" style="min-width: 320px;">
                     <div class="carousel__left-btn"></div>
                     <div class="carousel__wrapper">
@@ -93,9 +83,62 @@
                                     </div>
                                 </div>
                             </li>
+                            <li>
+                                <div class="carousel__element">
+                                    <div class="carousel__element-image">
+                                        <img src="{{ asset('i/panorams/5.jpg') }}" alt="panorama_4">
+                                    </div>
+                                    <div class="carousel__element-description">
+                                        {#<iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sru!2sru!4v1481149480657!6m8!1m7!1sF%3A-LH8hP609UI8%2FWDKwyK1E5GI%2FAAAAAAAAABU%2FZLQQZpRpQ4AGCbcWcKhnxwHBl9QRBlU6gCLIB!2m2!1d43.09421911158154!2d131.9119593501091!3f170.15162444311107!4f-19.451344782990432!5f0.7820865974627469" width="300" height="220" frameborder="0" style="border:0" allowfullscreen></iframe>#}
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="carousel__element">
+                                    <div class="carousel__element-image">
+                                        <img src="{{ asset('i/panorams/6.jpg') }}" alt="panorama_4">
+                                    </div>
+                                    <div class="carousel__element-description">
+                                        {#<iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sru!2sru!4v1481149480657!6m8!1m7!1sF%3A-LH8hP609UI8%2FWDKwyK1E5GI%2FAAAAAAAAABU%2FZLQQZpRpQ4AGCbcWcKhnxwHBl9QRBlU6gCLIB!2m2!1d43.09421911158154!2d131.9119593501091!3f170.15162444311107!4f-19.451344782990432!5f0.7820865974627469" width="300" height="220" frameborder="0" style="border:0" allowfullscreen></iframe>#}
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="carousel__element">
+                                    <div class="carousel__element-image">
+                                        <img src="{{ asset('i/panorams/7.jpg') }}" alt="panorama_4">
+                                    </div>
+                                    <div class="carousel__element-description">
+                                        {#<iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sru!2sru!4v1481149480657!6m8!1m7!1sF%3A-LH8hP609UI8%2FWDKwyK1E5GI%2FAAAAAAAAABU%2FZLQQZpRpQ4AGCbcWcKhnxwHBl9QRBlU6gCLIB!2m2!1d43.09421911158154!2d131.9119593501091!3f170.15162444311107!4f-19.451344782990432!5f0.7820865974627469" width="300" height="220" frameborder="0" style="border:0" allowfullscreen></iframe>#}
+
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                     <div class="carousel__right-btn"></div>
+                </div>
+            </div>
+        </section>
+        <section id="info" class="pane">
+            <div class="container">
+                <div class="title-wrapper">
+                    <div class="title">
+                        <span class="title-main">Что такое виртуальный тур?</span>
+                    </div>
+                </div>
+                <div class="info-block">
+                    <img style="
+                            border-radius: 20px;
+    border: 1px solid #ccc;"
+                         src="{{ asset('i/plan.jpg') }}" />
+                </div>
+                <div class="info-block-2">
+                    Виртуальный тур - это круговые 360° интерактивные панорамы помещений с возможностью перехода между ними. Это потрясающие виртуальные экскурсии по помещениям компании прямо в браузере или смартфоне. <br /> <br />
+                    3D-тур начинается за несколько метров до входа в заведение с улицы, либо в дверном проёме, если у компании нет отдельного входа. Вы сможете заранее спланировать маршрут перемещений, выгодно выделяя особенности помещения и не привлекая внимания к служебным и рабочим зонам. <br /> <br />
+                    Важная особенность 3Д-туров - возможность объединять в одном туре несколько этажей здания с логичной интуитивной навигацией между ними, как по лестницам и лифтам, так и кнопками выбора этажа. <br />
                 </div>
             </div>
         </section>
