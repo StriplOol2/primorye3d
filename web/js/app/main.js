@@ -51,7 +51,7 @@
 
             $(this.exampleElementLinkSelector).on("click", function (event) {
                 event.preventDefault();
-                var srcPanoram = $(this).attr("href");
+                var srcPanoram = $(this).attr("data-frame-src");
                 $('iframe').attr("src", srcPanoram);
                 $(self.disableScreenSelector).show();
                 $(self.panoramIframeModalSelector).fadeIn();
@@ -78,7 +78,7 @@
                 };
                 $(self.loaderSelector).show();
                 $.post('/api/order', data, function () {
-                        self.hideOrder();
+                        self.hideAllModal();
                     })
                     .fail(function () {
                         $(self.orderFormError).show();
