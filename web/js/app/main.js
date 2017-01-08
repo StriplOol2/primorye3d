@@ -10,6 +10,8 @@
         orderButton:            '.order-btn',
         orderFormError:         '.order__form-error',
         orderCloseSelector:     '.order__close',
+        exampleElementLinkSelector: '.carousel__element a',
+        panoramIframeModalSelector: '.panoram-iframe',
 
         /**
          *
@@ -47,14 +49,22 @@
                 $(self.order).fadeIn();
             });
 
+            $(this.exampleElementLinkSelector).on("click", function (event) {
+                event.preventDefault();
+                var srcPanoram = $(this).attr("href");
+                $('iframe').attr("src", srcPanoram);
+                $(self.disableScreenSelector).show();
+                $(self.panoramIframeModalSelector).fadeIn();
+            });
+
             // de active disable screen
             $(this.disableScreenSelector).on("click", function () {
-                self.hideOrder();
+                self.hideAllModal();
             });
 
             // ORDER
             $(this.orderCloseSelector).on("click", function () {
-                self.hideOrder();
+                self.hideAllModal();
             });
             $(this.orderFormButtonSelector).on("click", function (event) {
                 event.preventDefault();
@@ -81,9 +91,14 @@
             });
         },
 
-        hideOrder: function () {
+        hideAllModal: function () {
             var self = this;
             $(self.order).fadeOut('fast', (function () {
+                $(self.loaderSelector).hide();
+            }));
+            $(self.disableScreenSelector).fadeOut();
+
+            $(self.panoramIframeModalSelector).fadeOut('fast', (function () {
                 $(self.loaderSelector).hide();
             }));
             $(self.disableScreenSelector).fadeOut();

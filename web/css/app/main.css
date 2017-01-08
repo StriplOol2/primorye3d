@@ -190,7 +190,7 @@ a.button_link {
             color: #e5e9de;
             margin: 0 auto;
             display: block;
-            max-width: 246px;
+            max-width: 270px;
         }
 
         .title-sub {
@@ -212,7 +212,7 @@ a.button_link {
     ul {
         width:100%;
         text-align:center;
-        padding-left: 20px;
+        padding-left: 0;
 
         @mixin max-screen 1260px {
             max-width: 400px;
@@ -467,6 +467,20 @@ a.button_link {
     height: 306px;
     margin-top: -160px;
     margin-left: -178px;
+    padding: 17px;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+}
+
+.panoram-iframe {
+    display: none;
+    border-radius: 7px;
+    position: fixed;
+    width: 600px;
+    height: 450px;
+    margin-top: -240px;
+    margin-left: -300px;
     padding: 17px;
     top: 50%;
     left: 50%;
